@@ -9,6 +9,7 @@ type User struct {
 	Email     string    `json:"email" gorm:"unique"`
 	Password  string    `json:"password"`
 	Age       uint      `json:"age"`
+	Sex       int       `json:"sex"`
 	Length    uint      `json:"length"`
 	Weight    uint      `json:"weight"`
 	CreatedAt time.Time `json:"created_at"`

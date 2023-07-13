@@ -2,7 +2,7 @@ package model
 
 import "gorm.io/gorm"
 
-type Brand struct {
+type Category struct {
 	gorm.Model
 	Name string `json:"name" gorm:"not null"`
 }
