@@ -10,7 +10,7 @@ type Item struct {
 	Price      uint     `json:"price"`
 	User       User     `json:"id" gorm:"foreignKey:UserId; constraint:OnDelete:CASCADE"`
 	UserId     uint     `json:"user_id" gorm:"not null"`
-	Category   Category `json:"category" gorm:"foreignKey:CategoryId`
+	Category   Category `json:"category" gorm:"foreignKey:CategoryId"`
 	CategoryId uint     `json:"category_id" gorm:"not null"`
 	Brand      Brand    `json:"brand" gorm:"foreignKey:BrandId"`
 	BrandId    uint     `json:"brand_id" gorm:"not null"`
